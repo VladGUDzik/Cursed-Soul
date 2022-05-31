@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab12c77ea6aac349a3830b3bf95be5a, type: 3}
+  m_Name: HeroData
+  m_EditorClassIdentifier: 
+  movementVelocity: 7
+  jumpVelocity: 15
+  amountOfJumps: 2
+  wallJumpVelocity: 20
+  wallJumpTime: 0.4
+  wallJumpAngle: {x: 1, y: 2}
+  coyoteTime: 0.2
+  variableJumpHeightMultiplier: 0.5
+  wallSlideVelocity: 2
+  wallClimbVelocity: 3
+  startOffset: {x: 0.4, y: 0.9}
+  stopOffset: {x: 0.4, y: 0.75}
+  dashCoolDown: 0.5
+  maxHoldTime: 1
+  holdTimeScale: 0.25
+  dashTime: 0.2
+  dashVelocity: 30
+  drag: 10
+  dashEndYMultiplier: 0.2
+  distBetweenAfterImages: 0.5
+  attackSound: {fileID: 8300000, guid: b263d8541c1ff4a48889afc52d8ee90e, type: 3}

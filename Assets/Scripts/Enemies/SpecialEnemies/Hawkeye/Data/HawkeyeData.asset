@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d68c832e72124b4887dac24d59f4f22, type: 3}
+  m_Name: HawkeyeData
+  m_EditorClassIdentifier: 
+  damageHopSpeed: 15
+  wallCheckDistance: 0.2
+  ledgeCheckDistance: 0.4
+  groundCheckRadius: 0.3
+  maxAgroDistance: 9.5
+  minAgroDistance: 8.5
+  stunResistance: 3
+  stunRecoveryTime: 2
+  closeRangeActionDistance: 1.3
+  hitParticle: {fileID: 4378639006574193769, guid: bf1a9caa4bf9bf34db113d1bf8c5a270, type: 3}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsHero:
+    serializedVersion: 2
+    m_Bits: 8
