@@ -1,6 +1,7 @@
 using Audio;
 using Interfaces;
 using UnityEngine;
+using Shop.Coins;
 using Random = UnityEngine.Random;
 
 namespace Enemies.DeathEnemies
@@ -15,7 +16,7 @@ namespace Enemies.DeathEnemies
         [SerializeField] protected Material matBlink;
         [SerializeField] private float maxHealth;
         [SerializeField] protected AudioClip deathSound,hurtSound;
-        
+        [SerializeField] protected int score;
         protected Material MatDefault;
         protected SpriteRenderer SpriteRend;
         public float currentHealth { get; private set; }
@@ -37,6 +38,7 @@ namespace Enemies.DeathEnemies
         {
             if(health <= 0)
             {
+                Coins.PlusCoin(score);
                 var position = transform.position;
                 Instantiate(deathChunkParticle, position, deathChunkParticle.transform.rotation);
                 Instantiate(deathBloodParticle, position, deathBloodParticle.transform.rotation);
