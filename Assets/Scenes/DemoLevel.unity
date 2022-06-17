@@ -1145,6 +1145,7 @@ MonoBehaviour:
   maxHealth: 160
   deathSound: {fileID: 8300000, guid: b263d8541c1ff4a48889afc52d8ee90e, type: 3}
   hurtSound: {fileID: 8300000, guid: 382738d87aa399c429a33fbde853d1e1, type: 3}
+  score: 0
   player: {fileID: 660695403}
   attackPosition: {fileID: 1674726227}
   dBossAttack: {fileID: 11400000, guid: 9dab1bcbafa95384d964345ebf47619a, type: 2}
@@ -1470,6 +1471,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 512807509, guid: e059d37ea53793e428affc6c305f0af4, type: 3}
+      propertyPath: score
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 883581176766221833, guid: e059d37ea53793e428affc6c305f0af4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.56
@@ -14470,6 +14475,7 @@ MonoBehaviour:
   maxHealth: 30
   deathSound: {fileID: 8300000, guid: cf78de29446282749ad35b226f3deb45, type: 3}
   hurtSound: {fileID: 8300000, guid: 5f48cf0c99337034e985f773bb8cdedc, type: 3}
+  score: 15
 --- !u!114 &885862675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14522,6 +14528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1372006162, guid: d22d59ca06d48514d89af293ee9d5e00, type: 3}
+      propertyPath: score
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5945793598244191925, guid: d22d59ca06d48514d89af293ee9d5e00, type: 3}
       propertyPath: m_Name
       value: Wolculac
@@ -16052,11 +16062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 247805424993246044, guid: 13552e497a917d74d8f9286aaf0f2cf1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2519474
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 247805424993246044, guid: 13552e497a917d74d8f9286aaf0f2cf1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.417419
+      value: 23.25
       objectReference: {fileID: 0}
     - target: {fileID: 247805424993246044, guid: 13552e497a917d74d8f9286aaf0f2cf1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16815,7 +16825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAYIewtkYqlXgIAABYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1T2zAQ/SsZnQtjJ4Cht9aE0AOQIXS4+LKx17EmsuTRB0lg8t+7ku3YTaenbN6+3X37IX8xLk2DuVV6oXnxpApk3yfM2+zbZHA+4h42Sq74J/acd17YypMgcF7BckV47MOMqtFqnv+QG+HJEYFO8lLpel5sMFXGGoJLEAbJpZX10ZKgrwnb08/FnQ85kDVNvPVJ1l00OZKZo7SoB2pP7Gkty8lcQN1g4SUP5GnPjqeBJqmZjhFdXvnsSghuOi3MHprQawqNcdQJEQoO1FsQEF/OCKiQbyrrc4/DX8rSoO1kaTjcc01DavOyn6qdXA1m22r7AOF8pevkJuhqkz7947+Ig7vUqn7s68aRr2Ernm9f4ZCDsaPRjuH7kfQwoh2ILawFvlcon9VCKycLclrtfKgzOL0f/p5aSyvMtwPeSj0DXfP/BfkejqH7fSp4vT7NnoCVUGHiYf2oaTu/SHA4DtOlINSr+G3wDTbjK+ocD1wbS66uS+nlrZXTnsrmYWa+G2dTpSUGuBPdoARhD0tKY89XeOYblT3zPIB/L13xztc/g7OQAA/8KDpzLdXutCxTqd0TmurFWcElDqK945nmlCop2wsbz6QPWzldQj4K2zhe/H1aLIHZFHO4SW4hya9vy4s4nuFtMruaQnQdrZMZC7fHJfUJYtkK7cZDW5NDckl31n9GJgsNTbj2QsNuwT9rNRo5l6Va5RpRvrQZTsJRUxF6mcW84DSgFVrLZdg3+8qYUPkWi+yUKAudzvdWQzZkyVjDP5T1SMbS8N3ImIdPt7zU+MFx54v3yY7s+AdQSwMEFAAACAgAABgh7O+yZ+ltAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJJ5orFRanKimblFonmyqUWarqGhcaqFubGJUaKBqUGSubFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABgh7C2RiqVeAgAAFgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABgh7O+yZ+ltAAAAeAAAAAkAJAAAAAAAAAAAAAAAqwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABjAwAAAAA=
+    dataString: UEsDBBQAAAgIAAAQIewtkYqlXgIAABYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1T2zAQ/SsZnQtjJ4Cht9aE0AOQIXS4+LKx17EmsuTRB0lg8t+7ku3YTaenbN6+3X37IX8xLk2DuVV6oXnxpApk3yfM2+zbZHA+4h42Sq74J/acd17YypMgcF7BckV47MOMqtFqnv+QG+HJEYFO8lLpel5sMFXGGoJLEAbJpZX10ZKgrwnb08/FnQ85kDVNvPVJ1l00OZKZo7SoB2pP7Gkty8lcQN1g4SUP5GnPjqeBJqmZjhFdXvnsSghuOi3MHprQawqNcdQJEQoO1FsQEF/OCKiQbyrrc4/DX8rSoO1kaTjcc01DavOyn6qdXA1m22r7AOF8pevkJuhqkz7947+Ig7vUqn7s68aRr2Ernm9f4ZCDsaPRjuH7kfQwoh2ILawFvlcon9VCKycLclrtfKgzOL0f/p5aSyvMtwPeSj0DXfP/BfkejqH7fSp4vT7NnoCVUGHiYf2oaTu/SHA4DtOlINSr+G3wDTbjK+ocD1wbS66uS+nlrZXTnsrmYWa+G2dTpSUGuBPdoARhD0tKY89XeOYblT3zPIB/L13xztc/g7OQAA/8KDpzLdXutCxTqd0TmurFWcElDqK945nmlCop2wsbz6QPWzldQj4K2zhe/H1aLIHZFHO4SW4hya9vy4s4nuFtMruaQnQdrZMZC7fHJfUJYtkK7cZDW5NDckl31n9GJgsNTbj2QsNuwT9rNRo5l6Va5RpRvrQZTsJRUxF6mcW84DSgFVrLZdg3+8qYUPkWi+yUKAudzvdWQzZkyVjDP5T1SMbS8N3ImIdPt7zU+MFx54v3yY7s+AdQSwMEFAAACAgAABAh7O+yZ+ltAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJJ5orFRanKimblFonmyqUWarqGhcaqFubGJUaKBqUGSubFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAABAh7C2RiqVeAgAAFgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7O+yZ+ltAAAAeAAAAAkAJAAAAAAAAAAAAAAAqwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABjAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
