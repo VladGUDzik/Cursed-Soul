@@ -11,12 +11,12 @@ namespace Health.HeroDeath
         [SerializeField] private StatusFace statusFace;
         private void Start()
         {
-            healComponent.SetMaxHealth(healComponent.MaxHealth);
+            healComponent.SetMaxHealth(healComponent.maxHealth);
             SpriteRend = GetComponent<SpriteRenderer>();
            // maxHealth = healComponent.MaxHealth;
             MatDefault = SpriteRend.material;
         }
-
+        
         public override void Damage(float amount)
         {
             healComponent.currentHealth -= amount;

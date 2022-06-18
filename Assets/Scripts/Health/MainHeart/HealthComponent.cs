@@ -5,11 +5,10 @@ namespace Health.MainHeart
 {
     public class HealthComponent : MonoBehaviour
     {
-       [SerializeField] private float maxHealth;
-       public static HealthComponent instanceHealthComponent { get; private set; }
-       public float MaxHealth => maxHealth;
+        [field: SerializeField] public float maxHealth { get; private set; }
+        public static HealthComponent instanceHealthComponent { get; private set; }
 
-       public float currentHealth { get;  set; }
+        public float currentHealth { get;  set; }
 
        // public List<GameObject> maxHealth = new List<GameObject>();
         [SerializeField]private Slider slider;
