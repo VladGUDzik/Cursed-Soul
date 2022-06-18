@@ -1,7 +1,7 @@
 using Audio;
 using Interfaces;
-using UnityEngine;
 using Shop.Coins;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Enemies.DeathEnemies

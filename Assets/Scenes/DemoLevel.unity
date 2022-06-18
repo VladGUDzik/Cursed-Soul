@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03823b0d6a31b67449fcb5095e7a5a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  <maxHealth>k__BackingField: 0
   slider: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -15788,7 +15788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03823b0d6a31b67449fcb5095e7a5a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  <maxHealth>k__BackingField: 100
   slider: {fileID: 1451842427}
   gradient:
     serializedVersion: 2

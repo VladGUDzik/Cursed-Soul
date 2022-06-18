@@ -14,7 +14,8 @@ namespace Shop.Coins
 
         private void Update()
         {
-            _text.text = Coins.GETCoin().ToString();
+            _text.text = Coins.GetCoin().ToString();
         }
     }
 }
+

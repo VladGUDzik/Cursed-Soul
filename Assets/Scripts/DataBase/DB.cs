@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 public class DB : MonoBehaviour
 {
-   public List<Item> items = new List<Item>();
+   public List<Shop.Scroll_Menu.Item> items = new List<Shop.Scroll_Menu.Item>();
 }
 
 [System.Serializable]
 
-public class Item
+public partial class Item
 {
     public int id;
     public string name;
