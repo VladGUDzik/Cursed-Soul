@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,7 @@ namespace Health.MainHeart
            maxHealth = slider.value;
            instanceHealthComponent = this;
         }
+        
 
         public void SetMaxHealth(float health)
         {
@@ -28,8 +30,19 @@ namespace Health.MainHeart
             fill.color= gradient.Evaluate(1f);
         }
         
-        public void SetHealth(float health) {
+        public void SetHealth(float health)
+        {
             currentHealth = health;
+            slider.value = currentHealth;
+            fill.color = gradient.Evaluate(slider.normalizedValue);
+        }
+        public void SetBonusHealth(float health)
+        {
+            currentHealth = health;
+            if (currentHealth <= 0)
+                currentHealth = 1;
+            if (currentHealth > 100)
+                currentHealth = 100;
             slider.value = currentHealth;
             fill.color = gradient.Evaluate(slider.normalizedValue);
         }

@@ -4,6 +4,7 @@ namespace Core.CoreComponents
 {
     public class Movement : CoreComponent
     {
+        public static Movement instanceMovement { get; private set; }
         public Rigidbody2D rb { get; private set; }
 
         public int facingDirection { get; private set; }
