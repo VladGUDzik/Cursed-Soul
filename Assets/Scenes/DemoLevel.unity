@@ -14801,6 +14801,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066313344880961766, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066313344880961767, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.60444283
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066313344880961767, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
+      propertyPath: m_Size.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066313344880961767, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.4220096
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066313344880961767, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7066313344917218156, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
@@ -14857,7 +14873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066313344917218162, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
       propertyPath: m_GravityScale
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7066313344917218166, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
       propertyPath: m_Name
