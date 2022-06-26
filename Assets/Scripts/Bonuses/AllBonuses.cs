@@ -15,7 +15,7 @@ public class AllBonuses : MonoBehaviour
             if (hp != 0)
                 HealthComponent.instanceHealthComponent.SetBonusHealth(HealthComponent.instanceHealthComponent.currentHealth + hp);
            // if (speed!=0)
-            //    Movement.instanceMovement.SetVelocity();
+            //Movement.instanceMovement.SetVelocity();
                 
 
 

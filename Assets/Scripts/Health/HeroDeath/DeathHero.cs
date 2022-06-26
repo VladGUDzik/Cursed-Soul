@@ -1,6 +1,8 @@
+using System;
 using Enemies.DeathEnemies;
 using Health.MainHeart;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
 namespace Health.HeroDeath
@@ -8,6 +10,7 @@ namespace Health.HeroDeath
     public class DeathHero : Death
     {
         public HealthComponent healComponent;
+        public static DeathHero InstanceDeathHero { get; private set; }
         [SerializeField] private StatusFace statusFace;
         private void Start()
         {
@@ -28,6 +31,12 @@ namespace Health.HeroDeath
             healComponent.SetHealth(healComponent.currentHealth);
             OverDestroyer(healComponent.currentHealth);
             
+        }
+
+        public static void Poison(float amount, float period, ref bool checkPoison)
+        {
+            
+
         }
     }
 }
