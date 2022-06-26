@@ -32,11 +32,5 @@ namespace Health.HeroDeath
             OverDestroyer(healComponent.currentHealth);
             
         }
-
-        public static void Poison(float amount, float period, ref bool checkPoison)
-        {
-            
-
-        }
     }
 }
