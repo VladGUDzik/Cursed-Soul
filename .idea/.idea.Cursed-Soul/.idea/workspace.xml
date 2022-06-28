@@ -98,14 +98,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Shop/ScrollBar/ShopScroll.cs</url>
           <line>91</line>
-          <properties documentPath="D:\UnityGameCS\Cursed-Soul\Assets\Scripts\Shop\ScrollBar\ShopScroll.cs" initialLine="91" containingFunctionPresentation="method 'ScrollTo'">
-            <startOffsets>
-              <option value="2897" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2922" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\UnityGameCS\Cursed-Soul\Assets\Scripts\Shop\ScrollBar\ShopScroll.cs" initialLine="91" containingFunctionPresentation="method 'ScrollTo'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
