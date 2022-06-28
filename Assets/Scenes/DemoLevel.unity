@@ -14551,6 +14551,7 @@ GameObject:
   - component: {fileID: 885862673}
   - component: {fileID: 885862675}
   - component: {fileID: 885862674}
+  - component: {fileID: 885862676}
   m_Layer: 7
   m_Name: FlyingMonster
   m_TagString: Enemies
@@ -14775,6 +14776,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 885862668}
+--- !u!50 &885862676
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885862666}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &900630401
 GameObject:
   m_ObjectHideFlags: 0
