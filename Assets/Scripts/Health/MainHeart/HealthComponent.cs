@@ -26,8 +26,8 @@ namespace Health.MainHeart
         {
             maxHealth = health;
             currentHealth = maxHealth;
-            slider.value =maxHealth;
-            fill.color= gradient.Evaluate(1f);
+            slider.value = maxHealth;
+            fill.color = gradient.Evaluate(1f);
         }
         
         public void SetHealth(float health)
