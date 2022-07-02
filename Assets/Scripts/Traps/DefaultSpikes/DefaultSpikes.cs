@@ -24,40 +24,34 @@ namespace Traps.DefaultSpikes
 
         private void FixedUpdate()
         {
-            if (checkPoison)
+            if (!checkPoison) return;
+            period -= Time.deltaTime;
+            if ( period > 0 )
             {
-                period -= Time.deltaTime;
-                if ( period > 0 )
-                {
-                   HealthComponent.instanceHealthComponent.SetBonusHealth(HealthComponent.instanceHealthComponent.currentHealth - damagePoison);
-                }
-                else
-                {
-                    checkPoison = false;
-                }
-                
+                HealthComponent.instanceHealthComponent.SetBonusHealth(HealthComponent.instanceHealthComponent.currentHealth - damagePoison);
+            }
+            else
+            {
+                checkPoison = false;
             }
         }
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Player"))
+            if (!other.CompareTag("Player")) return;
+            if (poison)
             {
-                if (poison)
-                {
-                    period = startPeriod;
-                    checkPoison = true;
-                    other.GetComponent<DeathHero>().Damage(damageSpikes);
-                    other.GetComponentInChildren<Movement>().SetVelocity(10f, angle, -1);
-                }
-                else
-                {
-                    other.GetComponent<DeathHero>().Damage(damageSpikes);
-                    other.GetComponentInChildren<Movement>().SetVelocity(10f, angle, -1);
-                }
-                
+                period = startPeriod;
+                checkPoison = true;
+                other.GetComponent<DeathHero>().Damage(damageSpikes);
+                other.GetComponentInChildren<Movement>().SetVelocity(10f, angle, -1);
             }
-            
+            else
+            {
+                other.GetComponent<DeathHero>().Damage(damageSpikes);
+                other.GetComponentInChildren<Movement>().SetVelocity(10f, angle, -1);
+            }
+
         }
     }
 }

@@ -14552,6 +14552,7 @@ GameObject:
   - component: {fileID: 885862675}
   - component: {fileID: 885862674}
   - component: {fileID: 885862676}
+  - component: {fileID: 885862677}
   m_Layer: 7
   m_Name: FlyingMonster
   m_TagString: Enemies
@@ -14776,6 +14777,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 885862668}
+  meleeAttackSound: {fileID: 8300000, guid: cf78de29446282749ad35b226f3deb45, type: 3}
+  damageAmount: 0
+  angle: {x: 0, y: 0}
 --- !u!50 &885862676
 Rigidbody2D:
   serializedVersion: 4
@@ -14797,6 +14801,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &885862677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885862666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd9fcddced041c4e929999d3b453977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900630401
 GameObject:
   m_ObjectHideFlags: 0
