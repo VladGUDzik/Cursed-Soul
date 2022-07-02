@@ -14623,11 +14623,11 @@ GameObject:
   - component: {fileID: 885862667}
   - component: {fileID: 885862672}
   - component: {fileID: 885862671}
-  - component: {fileID: 885862673}
   - component: {fileID: 885862675}
   - component: {fileID: 885862674}
   - component: {fileID: 885862676}
   - component: {fileID: 885862677}
+  - component: {fileID: 885862673}
   m_Layer: 7
   m_Name: FlyingMonster
   m_TagString: Enemies
@@ -14803,8 +14803,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &885862673
-CircleCollider2D:
+--- !u!61 &885862673
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14813,12 +14813,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042547226, y: -0.053894043}
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 1.46}
+    newSize: {x: 1.92, y: 1.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.6196232
+  m_Size: {x: 1.92, y: 1.46}
+  m_EdgeRadius: 0
 --- !u!114 &885862674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14853,8 +14863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiPath: {fileID: 885862668}
   meleeAttackSound: {fileID: 8300000, guid: cf78de29446282749ad35b226f3deb45, type: 3}
-  damageAmount: 0
-  angle: {x: 0, y: 0}
+  damageAmount: 10
+  angle: {x: 3, y: 3}
 --- !u!50 &885862676
 Rigidbody2D:
   serializedVersion: 4
@@ -17738,7 +17748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40.03003, y: -73.2}
+  m_AnchoredPosition: {x: 40.03003, y: -73.20001}
   m_SizeDelta: {x: 158.27, y: 28.29}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1855439867
