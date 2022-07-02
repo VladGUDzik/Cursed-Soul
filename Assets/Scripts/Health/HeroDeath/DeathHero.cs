@@ -22,14 +22,27 @@ namespace Health.HeroDeath
         
         public override void Damage(float amount)
         {
-            healComponent.currentHealth -= amount;
-            Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+            if (Shield.InstanceShield.CurrentShield > 0)
+            {
+                Shield.InstanceShield.CurrentShield -= amount;
+                Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
 
-            statusFace.HealthChange(healComponent.currentHealth);
+                BlinkMaterial();
+                healComponent.SetHealth(Shield.InstanceShield.CurrentShield);
+                OverDestroyer(healComponent.currentHealth);
+            }
+            else
+            {
+                healComponent.currentHealth -= amount;
+                Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+
+                statusFace.HealthChange(healComponent.currentHealth);
             
-            BlinkMaterial();
-            healComponent.SetHealth(healComponent.currentHealth);
-            OverDestroyer(healComponent.currentHealth);
+                BlinkMaterial();
+                healComponent.SetHealth(healComponent.currentHealth);
+                OverDestroyer(healComponent.currentHealth);
+            }
+            
             
         }
     }
