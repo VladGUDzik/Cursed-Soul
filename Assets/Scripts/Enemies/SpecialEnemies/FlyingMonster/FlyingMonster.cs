@@ -1,21 +1,22 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Enemies.State_Machine;
 using Pathfinding;
+using UnityEngine;
 
-public class FlyingMonster : MonoBehaviour
+namespace Enemies.SpecialEnemies.FlyingMonster
 {
-   [SerializeField] private AIPath aiPath;
-   private SpriteRenderer _sprite;
-
-   private void Awake()
+   public class FlyingMonster : Entity
    {
-      _sprite = GetComponent<SpriteRenderer>();
-   }
+      [SerializeField] private AIPath aiPath;
+      private SpriteRenderer _sprite;
 
-   private void Update()
-   {
-      _sprite.flipX = aiPath.desiredVelocity.x <= 0.01f;
+      public override void Awake()
+      {
+         _sprite = GetComponent<SpriteRenderer>();
+      }
+
+      public override void Update()
+      {
+         _sprite.flipX = aiPath.desiredVelocity.x <= 0.01f;
+      }
    }
 }
