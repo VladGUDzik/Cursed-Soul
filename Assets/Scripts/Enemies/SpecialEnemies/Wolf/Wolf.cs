@@ -45,6 +45,7 @@ namespace Enemies.SpecialEnemies.Wolf
          StateMachine.Initialize(moveState);
       }
 
+      // ReSharper disable Unity.PerformanceAnalysis
       protected override void ApplyStun()
       {
          base.ApplyStun();

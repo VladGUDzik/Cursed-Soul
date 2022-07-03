@@ -34,7 +34,7 @@ namespace Traps
         private void CheckAttacking()
         {
             if(_attacking)
-                transform.Translate(_destination*Time.deltaTime *speed);
+                transform.Translate(_destination * (Time.deltaTime * speed));
             else
             {
                 _checkTimer += Time.deltaTime;

@@ -1132,6 +1132,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fb2e4ac37aa674c84d2f4fe96f97e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &503398501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7066313344917218166, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
+  m_PrefabInstance: {fileID: 1078317370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &503398502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503398501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ef3a65fa4e0ba4e80b1b9a67334d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &531066902
 GameObject:
   m_ObjectHideFlags: 0
@@ -14861,6 +14878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d95ea2f2e07639141ae39484528ba838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 970629580}
   aiPath: {fileID: 885862668}
   meleeAttackSound: {fileID: 8300000, guid: cf78de29446282749ad35b226f3deb45, type: 3}
   damageAmount: 10
@@ -14930,6 +14948,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970629580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7066313345519965871, guid: a1e33144ca657194b8bb06f902db430e, type: 3}
+  m_PrefabInstance: {fileID: 1078317370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a9d02ded38b6a46a328e9a4775954d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &997763054
 PrefabInstance:
   m_ObjectHideFlags: 0

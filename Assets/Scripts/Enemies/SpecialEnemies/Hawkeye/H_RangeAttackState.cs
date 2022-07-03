@@ -26,6 +26,7 @@ namespace Enemies.SpecialEnemies.Hawkeye
             base.Exit();
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public override void LogicUpdate()
         {
             base.LogicUpdate();

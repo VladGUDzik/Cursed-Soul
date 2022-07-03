@@ -58,6 +58,7 @@ namespace Enemies.SpecialEnemies.Hawkeye
          StateMachine.Initialize(moveState);
       }
 
+      // ReSharper disable Unity.PerformanceAnalysis
       protected override void ApplyStun()
       {
          base.ApplyStun();

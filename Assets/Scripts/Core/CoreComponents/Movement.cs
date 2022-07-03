@@ -1,10 +1,10 @@
 using UnityEngine;
+using Vector2 = UnityEngine.Vector2;
 
 namespace Core.CoreComponents
 {
     public class Movement : CoreComponent
     {
-        public static Movement instanceMovement { get; private set; }
         public Rigidbody2D rb { get; private set; }
 
         public int facingDirection { get; private set; }
@@ -12,7 +12,7 @@ namespace Core.CoreComponents
         public Vector2 currentVelocity { get; private set; }
 
         private Vector2 _workSpace;
-
+       
         protected override void Awake()
         {
             base.Awake();
@@ -22,6 +22,7 @@ namespace Core.CoreComponents
             facingDirection = 1;
             CanSetVelocity = true;
         }
+        
 
         public override void LogicUpdate()
         {
