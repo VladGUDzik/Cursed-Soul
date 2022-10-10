@@ -27,6 +27,7 @@ namespace Hero.HeroFiniteStateMachine
             core = hero.core;
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public virtual void Enter()
         {
             DoChecks();

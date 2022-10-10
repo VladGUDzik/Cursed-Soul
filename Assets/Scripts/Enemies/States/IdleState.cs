@@ -7,14 +7,14 @@ namespace Enemies.States
 {
     public class IdleState : State
     {
-        private Movement Movement => _movement ??= core.GetCoreComponent(ref _movement);
+        private Movement movement => _movement ??= core.GetCoreComponent(ref _movement);
         private Movement _movement;
-        private CollisionSenses CollisionSenses => _collisionSenses ??= core.GetCoreComponent(ref _collisionSenses);
+        private CollisionSenses collisionSenses => _collisionSenses ??= core.GetCoreComponent(ref _collisionSenses);
         private CollisionSenses _collisionSenses;
         
         protected D_IdleState stateData;
-        protected bool flipAfterIdle;
-        protected bool isIdleTimeOver;
+        protected bool FlipAfterIdle;
+        protected bool IsIdleTimeOver;
         protected bool IsHeroInMinAgroRange;
     
         protected float IdleTime;
@@ -34,9 +34,9 @@ namespace Enemies.States
         {
             base.Exit();
 
-            if (flipAfterIdle)
+            if (FlipAfterIdle)
             {
-                Movement?.Flip();
+                movement?.Flip();
             }
         }
 
@@ -44,11 +44,11 @@ namespace Enemies.States
         {
             base.LogicUpdate();
         
-            Movement?.SetVelocityX(0f);
+            movement?.SetVelocityX(0f);
         
             if (Time.time >= startTime + IdleTime)
             {
-                isIdleTimeOver = true;
+                IsIdleTimeOver = true;
             }
         }
 
@@ -56,19 +56,14 @@ namespace Enemies.States
         {
             base.Enter();
         
-            Movement?.SetVelocityX(0f);
-            isIdleTimeOver = false;
+            movement?.SetVelocityX(0f);
+            IsIdleTimeOver = false;
             SetRandomIdleTime();
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
         }
 
         public void SetFlipAfterIdle(bool flip)
         {
-            flipAfterIdle = flip;
+            FlipAfterIdle = flip;
         }
 
         private void SetRandomIdleTime()

@@ -15,7 +15,6 @@ namespace Enemies.SpecialEnemies.Hawkeye
 
         public override void PhysicsUpdate()
         {
-            base.PhysicsUpdate();
         }
 
         protected override void DoChecks()
@@ -39,7 +38,7 @@ namespace Enemies.SpecialEnemies.Hawkeye
 
             if (IsHeroInMinAgroRange)
                 stateMachine.ChangeState(_hawkeye.heroDetectedState);
-            else if (isIdleTimeOver)
+            else if (IsIdleTimeOver)
                 stateMachine.ChangeState(_hawkeye.moveState);
         }
     }

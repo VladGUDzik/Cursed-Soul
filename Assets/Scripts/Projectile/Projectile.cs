@@ -107,7 +107,7 @@ namespace Projectile
             Debug.Log("counterattack");
             DecreaseHealth(amount);
         
-           // Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+           //Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
            
            if (_health >= 0) return;
             // var position = transform.position;

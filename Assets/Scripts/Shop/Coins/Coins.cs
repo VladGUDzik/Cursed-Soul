@@ -18,10 +18,7 @@ namespace Shop.Coins
 
         private static bool CheckPrice(int value)
         {
-            if((_coin-value) < 0)
-                return false;
-            
-            return true;
+            return (_coin-value) >= 0;
         }
 
         public static void MinusCoin(int value)

@@ -18,6 +18,7 @@ namespace Core.CoreComponents
         [SerializeField] private Vector2 angle;
         [SerializeField] private float touchDamageAmount,damageVelocity;
         
+        // ReSharper disable Unity.PerformanceAnalysis
         public override void LogicUpdate()
         {
             CheckKnockback();

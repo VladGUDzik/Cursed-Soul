@@ -29,7 +29,7 @@ namespace Enemies.SpecialEnemies.Wolf
             {
                 stateMachine.ChangeState(Wolf.heroDetectedState);
             }
-            else if (isIdleTimeOver)
+            else if (IsIdleTimeOver)
             {
                 stateMachine.ChangeState(Wolf.moveState);
             }
@@ -37,7 +37,6 @@ namespace Enemies.SpecialEnemies.Wolf
 
         public override void PhysicsUpdate()
         {
-            base.PhysicsUpdate();
         }
     }
 }

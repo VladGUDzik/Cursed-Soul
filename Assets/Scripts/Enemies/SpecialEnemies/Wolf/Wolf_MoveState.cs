@@ -12,6 +12,7 @@ namespace Enemies.SpecialEnemies.Wolf
             this._wolf = _wolf;
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public override void Enter()
         {
             base.Enter();

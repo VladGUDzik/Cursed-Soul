@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Core.CoreComponents;
 using Enemies.Bosses.Data;
 using Enemies.DeathEnemies;
@@ -54,6 +55,7 @@ namespace Enemies.Bosses
         {
             var detectedObjects = Physics2D.OverlapCircleAll(attackPosition.position,dBossAttack.attackRadius,
                 dBossAttack.whatIsHero);
+            
             
             foreach (var collider in detectedObjects)
             {

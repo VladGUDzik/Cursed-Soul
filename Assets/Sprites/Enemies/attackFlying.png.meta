@@ -99,6 +99,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -724,6 +725,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      attackFlying_24: -6507457636697424795
+      attackFlying_4: 2073373850235173316
+      attackFlying_6: 6081916807590822376
+      attackFlying_14: -6371922408071394047
+      attackFlying_8: -6608774328247682143
+      attackFlying_9: 2235675943735221618
+      attackFlying_23: 4172294643377061641
+      attackFlying_12: 7419040571126627508
+      attackFlying_5: 3962412908179046212
+      attackFlying_13: 2936818740050563338
+      attackFlying_1: -1034209267740494182
+      attackFlying_15: -8110660668042953870
+      attackFlying_16: 8068767282879260475
+      attackFlying_20: -5361151463792300620
+      attackFlying_21: -2176640297236768678
+      attackFlying_0: 7316159850253332968
+      attackFlying_22: -1110607039346147097
+      attackFlying_18: 3194839998601852821
+      attackFlying_2: -6982575446695364751
+      attackFlying_19: -7051261391056894247
+      attackFlying_17: -8475301446203809909
+      attackFlying_7: 3761530457663656020
+      attackFlying_11: 6244325199030911205
+      attackFlying_3: -8201343157119883752
+      attackFlying_10: 5299953401240315056
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
